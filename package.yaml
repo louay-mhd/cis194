@@ -37,9 +37,21 @@ executables:
     - cis194
 
 tests:
-  cis194-test:
-    main:                Spec.hs
-    source-dirs:         test
+  week1-test:
+    main:                Week1Spec.hs
+    source-dirs:         test/week1
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cis194
+    - HUnit
+    - tasty
+    - tasty-hunit
+  week2-test:
+    main:                Week2Spec.hs
+    source-dirs:         test/week2
     ghc-options:
     - -threaded
     - -rtsopts
