@@ -1,6 +1,4 @@
-module CsSpring13.Week1
-    ( toDigits, toDigitsRev, doubleEveryOther,sumDigits,validate,hanoi
-    ) where
+module CsSpring13.Week1.Hw where
 {- card number validation-}
 toDigits :: Integer -> [Integer]
 toDigits n
