@@ -1,6 +1,6 @@
 import Test.Tasty (defaultMain, testGroup)
 import Test.Tasty.HUnit (assertEqual, testCase)
-import CsSpring13.Week1 (toDigits, toDigitsRev, doubleEveryOther,sumDigits,validate,hanoi)
+import CsSpring13.Week1.Hw
 
 main = defaultMain unitTests
 
@@ -14,6 +14,9 @@ unitTests =
      ,testGroup "hanoi" hanoiTests
     ]
 
+{-- Week2 --}
+
+{-- Week1--}
 toDigitsTests =
   [testCase "1234 == [1,2,3,4]" $ assertEqual [] [1,2,3,4] (toDigits 1234)
    ,testCase "0 == []" $ assertEqual [] [] (toDigits 0)
